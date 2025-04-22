@@ -90,7 +90,7 @@ const ACTIONS = require('./src/Actions');
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://mini-project-eight-ivory.vercel.app", // Adjust this in production for security
+        origin: "*", // Adjust this in production for security
         methods: ["GET", "POST"]
     }
 });
